@@ -1,9 +1,11 @@
 import { getAuth, updateProfile } from 'firebase/auth'
-import { useState, useEffect } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useState } from 'react'
+import { useNavigate, Link } from 'react-router-dom'
 import { updateDoc, doc } from 'firebase/firestore'
 import { db } from '../firebase.config'
 import { toast } from 'react-toastify'
+import arrowRight from '../assets/svg/keyboardArrowRightIcon.svg'
+import { MdQueueMusic } from 'react-icons/md'
 
 const Profile = () => {
   const auth = getAuth()
@@ -69,6 +71,12 @@ const Profile = () => {
             <input type='text' id='name' className={!changeDetails ? 'profileName' : 'profileNameActive'} disabled={!changeDetails} value={name} onChange={onChange} />
             <input type='text' id='email' className={!changeDetails ? 'profileEmail' : 'profileEmailActive'} disabled={!changeDetails} value={email} onChange={onChange} />
           </div>
+
+          <Link to='/create-listing' className='createListing'>
+            <MdQueueMusic />
+            <p>Create Sale</p>
+            <img src={arrowRight} alt='arrow' />
+          </Link>
         </main>
       </div>
     )

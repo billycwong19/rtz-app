@@ -7,7 +7,7 @@ import Spinner from '../components/Spinner'
 import ListingItem from '../components/ListingItem'
 
 
-const Category = () => {
+const Deals = () => {
     const [listings, setListings] = useState(null)
     const [loading, setLoading] = useState(true)
     
@@ -22,7 +22,7 @@ const Category = () => {
                 // create query
                 const q = query(
                     listingsRef, 
-                    where('type', '==', params.categoryName), 
+                    where('deal', '==', true), 
                     orderBy('timestamp', 'desc'), 
                     limit(10)) 
 
@@ -46,17 +46,13 @@ const Category = () => {
         }
 
         fetchListings()
-    }, [params.categoryName])
+    }, [])
 
     return (
         <div className='category'>
             <header>
                 <p className='pageHeader'>
-                    { params.categoryName === 'vinyl' ? 
-                    'Vinyl for sale' : 
-                    params.categoryName === 'cd' ? 
-                    `CD's for sale` : 
-                    'Tapes for sale' }
+                    Deals
                 </p>
             </header>
             { loading ? <Spinner /> : listings && listings.length > 0 ? (<>
@@ -72,4 +68,4 @@ const Category = () => {
     )
 }
 
-export default Category
+export default Deals

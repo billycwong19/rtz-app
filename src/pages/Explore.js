@@ -1,6 +1,4 @@
 import { Link } from "react-router-dom"
-import rentCategoryImage from '../assets/jpg/rentCategoryImage.jpg'
-import sellCategoryImage from '../assets/jpg/sellCategoryImage.jpg'
 import { FaCompactDisc } from 'react-icons/fa'
 import { RiTapeLine } from 'react-icons/ri'
 import { TbVinyl } from 'react-icons/tb'

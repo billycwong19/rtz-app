@@ -31,15 +31,15 @@ const Navbar = () => {
                 </li>
                 <li 
                 className='navbarListItem' 
-                onClick={() => navigate('/offers')}
+                onClick={() => navigate('/deals')}
                 >
                     <OfferIcon 
-                    fill={pathMatchRoute('/offers') ? '#2c2c2c' : '#8f8f8f'} width='36px' 
+                    fill={pathMatchRoute('/deals') ? '#2c2c2c' : '#8f8f8f'} width='36px' 
                     height='36px' 
                     />
                     <p 
-                    className={pathMatchRoute('/offers') ? 'navbarListItemNameActive' : 'navbarListItemName'}
-                    >Offer</p>
+                    className={pathMatchRoute('/deals') ? 'navbarListItemNameActive' : 'navbarListItemName'}
+                    >Deals</p>
                 </li>
                 <li 
                 className='navbarListItem' 
