@@ -6,6 +6,7 @@ import Spinner from '../components/Spinner'
 
 const CreateListing = () => {
     const [geolocationEnabled, setGeolocationEnabled] = useState(true)
+    const [loading, setLoading] = useState(false)
     const [formData, setFormData] = useState({
         type: '',
         artist: '',
@@ -21,6 +22,7 @@ const CreateListing = () => {
         longitude: 0,
 
     })
+    const { type, artist, release, year, imageUrls, deal, regPrice, discPrice, location, ship, latitude, longitude } = formData
 
     const auth = getAuth()
     const navigate = useNavigate()
@@ -40,7 +42,12 @@ const CreateListing = () => {
         return () => {
             isMounted.current = false
         }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [isMounted]) 
+
+    if (loading) {
+        return <Spinner />
+    }
 
     return (
         <div>CreateListing</div>

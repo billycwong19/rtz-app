@@ -18,12 +18,12 @@ const ListingItem = ({ listing, id, onDelete }) => {
                     {listing.release}
                 </p>
                 <p className='categoryListingPrice'>
-                    <ImPriceTags />
+                    
                     {listing.deal ? `$${listing.discPrice} was $${listing.regPrice}` : `$${listing.regPrice}`}
                     
                 </p>
                 <div className='categoryListingInfoDiv'>
-
+               
                     <p className='categoryListingInfoText'>
                     {listing.artist}
                     </p>
