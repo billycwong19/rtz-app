@@ -107,13 +107,17 @@ const CreateListing = () => {
         const formDataCopy = {
             ...formData, 
             imageUrls,
-            timestamp: serverTimestamp
+            timestamp: serverTimestamp()
         }
         delete formDataCopy.images
         location && (formDataCopy.location = location)
         !formDataCopy.deal && delete formDataCopy.discPrice
 
+        const docRef = await addDoc(collection(db, 'listings'), formDataCopy)
+
         setLoading(false)
+        toast.success('sale created!')
+        navigate(`/category/${formDataCopy.type}/${docRef.id}`)
     }
 
     const onMutate = e => {

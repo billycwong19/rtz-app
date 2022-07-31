@@ -36,6 +36,12 @@ const ListingItem = ({ listing, id, onDelete }) => {
                     </p>
 
                 </div>
+                <div className='categoryListingInfoDiv'>
+               
+                    <p className='categoryListingInfoText'>
+                    {listing.comments}
+                    </p>
+                </div>
             </div>
         </Link>
 
