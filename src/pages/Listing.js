@@ -67,18 +67,15 @@ const Listing = () => {
         { shareLinkCopied && <p className='linkCopied'>link copied to clipboard</p>}
 
         <div className='listingDetails'>
-            <p className='listingName'>{listing.release} - ${listing.deal ? listing.discPrice : listing.regPrice}</p>
-            <p className='listingType'>{listing.type}</p>
+         <p className='listingType'>{listing.type}</p>
             { listing.deal && (
                 <p className='discountPrice'>${listing.regPrice - listing.discPrice} discount</p>
             )}
+            <p className='listingName'>{listing.release} - ${listing.deal ? listing.discPrice : listing.regPrice}</p>
 
             <ul className='listingDetailsList'>
                 <li>
-                    <h2>by {listing.artist}</h2>
-                </li>
-                <li>
-                    <h3>{listing.year}</h3>
+                    <h3>{listing.artist} - {listing.year}</h3>
                 </li>
                 <li>
                     <p>{listing.comments}</p>

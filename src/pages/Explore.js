@@ -3,6 +3,8 @@ import vinyl from '../assets/png/vinyl.png'
 import tape from '../assets/png/tape.png'
 import cd from '../assets/png/cd.png'
 
+import Slider from "../components/Slider"
+import { Slide } from "react-toastify"
 
 
 const Explore = () => {
@@ -14,7 +16,7 @@ const Explore = () => {
         </header>
 
         <main>
-          {/* slider goes here */}
+          <Slider />
           <p className="exploreCategoryHeading">
             Categories
           </p>
