@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 import { ReactComponent as DeleteIcon } from '../assets/svg/deleteIcon.svg'
-import { ImPriceTags } from 'react-icons/im'
 
 
 const ListingItem = ({ listing, id, onDelete }) => {
