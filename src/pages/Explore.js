@@ -4,7 +4,6 @@ import tape from '../assets/png/tape.png'
 import cd from '../assets/png/cd.png'
 
 import Slider from "../components/Slider"
-import { Slide } from "react-toastify"
 
 
 const Explore = () => {
