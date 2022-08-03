@@ -1,6 +1,6 @@
 <div id="top"></div>
 
-# Return To Zero (RTZ) physical music resale app
+# RTZ
 
 #### Made with
 
