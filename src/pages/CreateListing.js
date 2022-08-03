@@ -22,8 +22,7 @@ const CreateListing = () => {
         discPrice: `0.00`,
         location: '',
         ship: `0.00`,
-        comments: ''
-
+        comments: '',
     })
     const { type, artist, release, year, images, deal, regPrice, discPrice, location, ship, comments } = formData
 
@@ -82,6 +81,8 @@ const CreateListing = () => {
                             case 'running':
                                 console.log('Upload is running');
                                 break;
+                            default:
+                                break
                         }
                     },
                     (error) => {

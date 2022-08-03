@@ -22,7 +22,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Explore />} />
           <Route path='/deals' element={<Deals />} />
-          // nested route to ensure we are logged in
+          {/* nested route to ensure we are logged in */}
           <Route path='/profile' element={<PrivateRoute />}>
               <Route path='/profile' element={<Profile />} />
           </Route>

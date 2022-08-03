@@ -41,6 +41,10 @@ const Slider = () => {
         return <Spinner />
     }
 
+    if (listings.length === 0) {
+        return <></>
+    }
+
     return listings && (
         <>
             <p className='exploreHeading'>Recent</p>
@@ -52,7 +56,7 @@ const Slider = () => {
                 <div className='swiperSlideDiv'>
                 { listings.map(({ data, id }) => (
                     <SwiperSlide key={id} onClick={() => navigate(`/category/${data.type}/${id}`)}>
-                        <img src={data.imageUrls[0]} style={{objectFit: 'contain', minHeight: '200px', height: '30vh', width: '100%'}}/>
+                        <img src={data.imageUrls[0]} style={{objectFit: 'contain', minHeight: '200px', height: '30vh', width: '100%'}} alt={`${data.artist}-${data.release}-${id}`}/>
                         <p className='swiperSlideText'>{data.artist} - {data.release}</p>
                         <p className='swiperSlidePrice'>
                             ${data.discPrice ?? data.regPrice}
