@@ -58,9 +58,6 @@ const Slider = () => {
                     <SwiperSlide key={id} onClick={() => navigate(`/category/${data.type}/${id}`)}>
                         <img src={data.imageUrls[0]} style={{objectFit: 'contain', minHeight: '200px', height: '30vh', width: '100%'}} alt={`${data.artist}-${data.release}-${id}`}/>
                         <p className='swiperSlideText'>{data.artist} - {data.release}</p>
-                        <p className='swiperSlidePrice'>
-                            ${data.discPrice ?? data.regPrice}
-                        </p>
                         <p className='swiperSlideType'>
                             {data.type}
                         </p>
