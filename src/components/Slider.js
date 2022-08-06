@@ -46,7 +46,8 @@ const Slider = () => {
     }
 
     return listings && (
-        <>
+        <> 
+            <br />
             <p className='exploreHeading'>Recent</p>
 
             <Swiper

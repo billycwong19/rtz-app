@@ -143,6 +143,7 @@ button {
 .pageHeader {
   font-size: 2rem;
   font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .navbar {
@@ -405,7 +406,6 @@ button {
   min-height: 100px;
   height: 15vw;
   width: 100%;
-  border-radius: 1.5rem;
   object-fit: contain;
   margin: 0 auto;
 }

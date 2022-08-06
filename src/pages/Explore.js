@@ -2,18 +2,23 @@ import { Link } from "react-router-dom"
 import vinyl from '../assets/png/vinyl.png'
 import tape from '../assets/png/tape.png'
 import cd from '../assets/png/cd.png'
+import logo from '../assets/png/logo.png'
+import textLogo from '../assets/png/text_logo_2.png'
 
 import Slider from "../components/Slider"
+import { StyledHeader } from "./Explore.styles"
 
 
 const Explore = () => {
   return (
     <div className="explore">
-        <header>
-         <p className="pageHeader">Explore</p>
+        <StyledHeader>
+          <img src={logo} alt='logo' height={'64px'}/>
+          <img src={textLogo} alt='logo' height={'64px'}/>
+          <p className="pageHeader">marketplace</p>
+        </StyledHeader>
 
-        </header>
-
+        <hr />
         <main>
           <Slider />
           <p className="exploreCategoryHeading">
