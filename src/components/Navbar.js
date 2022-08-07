@@ -31,6 +31,17 @@ const Navbar = () => {
                 </li>
                 <li 
                 className='navbarListItem' 
+                onClick={() => navigate('/category/vinyl')}
+                >
+                    <ExploreIcon 
+                    fill={pathMatchRoute('/category/vinyl') ? '#2c2c2c' : '#8f8f8f'} width='36px' 
+                    height='36px'
+                    />
+                    <p 
+                    className={pathMatchRoute('/category/vinyl') ? 'navbarListItemNameActive' : 'navbarListItemName'}>Vinyl</p>
+                </li>
+                <li 
+                className='navbarListItem' 
                 onClick={() => navigate('/deals')}
                 >
                     <OfferIcon 

@@ -9,7 +9,7 @@ const Header = () => {
         <StyledHeader>
             <img src={logo} alt='logo' height={'64px'}/>
             <img src={textLogo} alt='logo' height={'64px'}/>
-            <p className="pageHeader">marketplace</p>
+            <h3>market</h3>
         </StyledHeader>
     </>
   )

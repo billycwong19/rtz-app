@@ -5,6 +5,10 @@ import { db } from '../firebase.config'
 import { toast } from 'react-toastify'
 import Spinner from '../components/Spinner'
 import ListingItem from '../components/ListingItem'
+import cd from '../assets/png/cd.png'
+import tape from '../assets/png/tape.png'
+import vinyl from '../assets/png/vinyl.png'
+import { StyledImg, StyledCategoryHeader } from './Category.style'
 
 
 const Category = () => {
@@ -89,7 +93,12 @@ const Category = () => {
 
     return (
         <div className='category'>
-            <header>
+            <StyledCategoryHeader>
+                <StyledImg src={ params.categoryName === 'vinyl' ? 
+                    vinyl : 
+                    params.categoryName === 'cd' ? 
+                    cd : 
+                    tape } />
                 <p className='pageHeader'>
                     { params.categoryName === 'vinyl' ? 
                     'Vinyl for sale' : 
@@ -97,7 +106,7 @@ const Category = () => {
                     `CD's for sale` : 
                     'Tapes for sale' }
                 </p>
-            </header>
+            </StyledCategoryHeader>
             { loading ? <Spinner /> : listings && listings.length > 0 ? (<>
                 <main className='categoryListings'>
                     {listings.map(listing => (
