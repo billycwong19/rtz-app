@@ -1,19 +1,17 @@
 <div id="top"></div>
 
-# RTZ
-
-#### Made with
+<div align="center">
 
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
 ![Firebase](https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge&logo=Firebase&logoColor=white)
 ![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7)
 
+</div>
+
 <div align="center">
-<img src="" alt="Logo" height="200">
+<img src="./src/assets/png/text_logo_1.png" alt="Logo" height="100">
   <p align="center">
-    <h2>RTZ</h2>
-    <br />
     <h4>A physical music marketplace for today.<h4>
     <br />
     <br />
