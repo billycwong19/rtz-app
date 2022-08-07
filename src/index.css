@@ -28,7 +28,7 @@ button {
 
 .babyLink:hover {
    text-decoration: underline;
-   color: #83eab6;
+   color: #2d7752;
 }
 
 .input,
@@ -65,7 +65,7 @@ button {
 
 .primaryButton {
   cursor: pointer;
-  background: #83eab6;
+  background: #2d7752;;
   border-radius: 1rem;
   padding: 0.85rem 2rem;
   color: #ffffff;
@@ -127,7 +127,7 @@ button {
   width: 64px;
   height: 64px;
   border: 8px solid;
-  border-color: #83eab6 transparent #83eab6 transparent;
+  border-color: #2d7752 transparent #2d7752 transparent;
   border-radius: 50%;
   animation: spin 1.2s linear infinite;
 }
@@ -221,7 +221,7 @@ button {
 
 .forgotPasswordLink {
   cursor: pointer;
-  color: #83eab6;
+  color: #2d7752;;
   font-weight: 600;
   text-align: right;
 }
@@ -261,7 +261,7 @@ button {
   align-items: center;
   width: 3rem;
   height: 3rem;
-  background-color: #83eab6;
+  background-color: #2d7752;;
   border-radius: 50%;
 }
 @media (min-width: 1024px) {
@@ -298,7 +298,7 @@ button {
 
 .registerLink {
   margin-top: 4rem;
-  color: #83eab6;
+  color: #2d7752;;
   font-weight: 600;
   text-align: center;
   margin-bottom: 3rem;
@@ -340,6 +340,7 @@ button {
   position: relative;
   width: 100%;
   height: 100%;
+  border: solid black 2px;
 }
 
 .swiperSlideImg {
@@ -510,7 +511,7 @@ button {
 .shareIconDiv {
   cursor: pointer;
   position: fixed;
-  top: 3%;
+  top: 33%;
   right: 5%;
   z-index: 2;
   background-color: #ffffff;
@@ -545,7 +546,7 @@ button {
 
 .listingType {
   padding: 0.25rem 0.5rem;
-  background-color: #83eab6;
+  background-color: #2d7752;;
   color: #ffffff;
   border-radius: 2rem;
   display: inline;
@@ -646,7 +647,7 @@ button {
   font-size: 1rem;
   font-weight: 600;
   color: #ffffff;
-  background-color: #83eab6;
+  background-color: #2d7752;;
   padding: 0.25rem 0.75rem;
   border-radius: 1rem;
 }
@@ -664,7 +665,7 @@ button {
 .changePersonalDetails {
   cursor: pointer;
   font-weight: 600;
-  color: #83eab6;
+  color: #2d7752;;
 }
 
 .profileCard {
@@ -759,7 +760,7 @@ button {
   align-items: center;
 }
 .formButtonActive {
-  background-color: #83eab6;
+  background-color: #2d7752;;
   color: #ffffff;
 }
 
@@ -814,7 +815,7 @@ button {
   width: 100%;
 }
 .formInputFile::-webkit-file-upload-button {
-  background-color: #83eab6;
+  background-color: #2d7752;;
   border: none;
   color: #ffffff;
   font-weight: 600;

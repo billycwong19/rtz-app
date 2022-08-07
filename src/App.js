@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Header from './components/Header';
 import Explore from './pages/Explore'
 import ForgotPassword from './pages/ForgotPassword';
 import Deals from './pages/Deals'
@@ -18,6 +19,7 @@ import EditListing from './pages/EditListing';
 function App() {
   return (
     <div>
+      <Header />
       <Router>
         <Routes>
           <Route path='/' element={<Explore />} />

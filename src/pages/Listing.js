@@ -42,7 +42,7 @@ const Listing = () => {
 
   return (
     <main>
-
+        <br />
         <Swiper slidesPerView={1} spaceBetween={50} pagination={{ clickable: true }}>
             <div className='swiperSlideDiv'>
             {listing.imageUrls.map((url, i) => (

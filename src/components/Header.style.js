@@ -4,6 +4,8 @@ export const StyledHeader = styled.header`
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    background-color: rgb(0, 0, 0, 0.7);
+    padding: .5rem 0;
     
     img {
         margin: 0 1em 0 .5em;
