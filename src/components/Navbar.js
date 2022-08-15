@@ -1,7 +1,7 @@
 import { useNavigate, useLocation } from 'react-router-dom'
 import { ReactComponent as OfferIcon } from '../assets/svg/localOfferIcon.svg'
 import { ReactComponent as ExploreIcon } from '../assets/svg/exploreIcon.svg'
-import { ReactComponent as PersonOutlineIcon } from '../assets/svg/personOutlineIcon.svg'
+
 
 
 const Navbar = () => {
@@ -42,26 +42,27 @@ const Navbar = () => {
                 </li>
                 <li 
                 className='navbarListItem' 
-                onClick={() => navigate('/deals')}
+                onClick={() => navigate('/category/tape')}
                 >
                     <OfferIcon 
-                    fill={pathMatchRoute('/deals') ? '#2c2c2c' : '#8f8f8f'} width='36px' 
+                    fill={pathMatchRoute('/category/tape') ? '#2c2c2c' : '#8f8f8f'} width='36px' 
                     height='36px' 
                     />
                     <p 
-                    className={pathMatchRoute('/deals') ? 'navbarListItemNameActive' : 'navbarListItemName'}
-                    >Deals</p>
+                    className={pathMatchRoute('/category/tape') ? 'navbarListItemNameActive' : 'navbarListItemName'}
+                    >Tape</p>
                 </li>
                 <li 
                 className='navbarListItem' 
-                onClick={() => navigate('/profile')}
+                onClick={() => navigate('/category/cd')}
                 >
-                    <PersonOutlineIcon 
-                    fill={pathMatchRoute('/profile') ? '#2c2c2c' : '#8f8f8f'} width='36px' 
+                    <OfferIcon 
+                    fill={pathMatchRoute('/category/cd') ? '#2c2c2c' : '#8f8f8f'} width='36px' 
                     height='36px' 
                     />
                     <p 
-                    className={pathMatchRoute('/profile') ? 'navbarListItemNameActive' : 'navbarListItemName'}>Profile</p>
+                    className={pathMatchRoute('/category/cd') ? 'navbarListItemNameActive' : 'navbarListItemName'}
+                    >CD</p>
                 </li>
             </ul>
         </nav>
