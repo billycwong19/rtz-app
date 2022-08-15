@@ -7,10 +7,18 @@ const Header = () => {
   return (
     <>
         <StyledHeader>
-            <img src={logo} alt='logo' height={'64px'}/>
+          <div>
+            <a href='/'>
+            <img src={logo} alt='logo' height={'64px'} />
+            </a>
             <img src={textLogo} alt='logo' height={'64px'}/>
             <h3>market</h3>
+          </div>
+          <div>
+            <a href='/deals'>Deals</a>
+          </div> 
         </StyledHeader>
+        
     </>
   )
 }
