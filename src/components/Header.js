@@ -1,11 +1,11 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { StyledHeader, ProfileIcon } from './Header.style'
 import logo from '../assets/png/logo.png'
 import textLogo from '../assets/png/text_logo_2.png'
 
 const Header = () => {
-
+  const navigate = useNavigate()
   return (
     <>
       <StyledHeader>
@@ -15,7 +15,7 @@ const Header = () => {
           </a>
           <img src={textLogo} alt='logo' height={'64px'} />
         </div>
-          <Link to='/profile'><ProfileIcon /></Link>
+          <ProfileIcon onClick={() => navigate('/profile')}/>
       </StyledHeader>
     </>
   )
