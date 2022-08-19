@@ -10,6 +10,9 @@ const Explore = () => {
     <div className="explore">
         <main>
           <Slider />
+          <Link to='/deals' style={{ color: '#000', marginRight: '2em'}}>
+            <h2 style={{ color: '#F4006F', textDecoration: 'underline'}}>Today's Deals!</h2>
+          </Link>
           <p className="exploreCategoryHeading">
             Categories
           </p>

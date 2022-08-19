@@ -28,10 +28,7 @@ export const StyledHeader = styled.header`
 export const ProfileIcon = styled(Person)`
     color: white;
     height: 32px;
+    margin-right: 1em;
 `
 
-export const LinksDiv = styled.div`
-    display: flex;
-    justify-content: space-evenly;
-`
 
