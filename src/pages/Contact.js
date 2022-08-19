@@ -20,7 +20,7 @@ const Contact = () => {
             if(docSnap.exists()) {
                 setSeller(docSnap.data())
             } else {
-                toast.error('could not find seller info')
+                toast.error('could not find seller info / must be logged in to contact seller')
             }
         }
 

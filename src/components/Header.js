@@ -14,7 +14,6 @@ const Header = () => {
             <img src={logo} alt='logo' height={'64px'} />
           </a>
           <img src={textLogo} alt='logo' height={'64px'} />
-          <h3>market</h3>
         </div>
           <Link to='/profile'><ProfileIcon /></Link>
       </StyledHeader>
