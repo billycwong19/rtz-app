@@ -63,6 +63,6 @@ Website coded by William Wong
 <br>
 Email: billycwong19@gmail.com
 
-Portfolio: [https://billycwong19.github.io/portfolio/](https://billycwong19.github.io/portfolio/)
+Portfolio: [https://williamwongjr.com](https://williamwongjr.com)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
