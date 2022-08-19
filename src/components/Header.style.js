@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Person } from '@styled-icons/bootstrap/Person'
 
 export const StyledHeader = styled.header`
     display: flex;
@@ -11,12 +12,6 @@ export const StyledHeader = styled.header`
     div {
         display: flex;
         align-items: center;
-
-        a {
-            color: white;
-            padding: 0;
-            margin: 0;
-        }
     }
     
     img {
@@ -28,5 +23,15 @@ export const StyledHeader = styled.header`
         padding: 0;
         color: #fff;
     }
+`
+
+export const ProfileIcon = styled(Person)`
+    color: white;
+    height: 32px;
+`
+
+export const LinksDiv = styled.div`
+    display: flex;
+    justify-content: space-evenly;
 `
 

@@ -1,9 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { StyledHeader } from './Header.style'
+import { StyledHeader, ProfileIcon, LinksDiv } from './Header.style'
 import logo from '../assets/png/logo.png'
 import textLogo from '../assets/png/text_logo_2.png'
-import { ReactComponent as PersonOutlineIcon } from '../assets/svg/personOutlineIcon.svg'
 
 const Header = () => {
 
@@ -17,10 +16,10 @@ const Header = () => {
           <img src={textLogo} alt='logo' height={'64px'} />
           <h3>market</h3>
         </div>
-        <div>
-          <Link to='/deals'>Deals</Link>
-          <Link to='/profile'><PersonOutlineIcon style={{ color: '#fff' }} /></Link>
-        </div>
+        <LinksDiv>
+          <Link to='/deals' style={{ color: '#fff', marginRight: '2em'}}>Deals</Link>
+          <Link to='/profile'><ProfileIcon /></Link>
+        </LinksDiv>
       </StyledHeader>
 
     </>
