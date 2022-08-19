@@ -19,8 +19,8 @@ import EditListing from './pages/EditListing';
 function App() {
   return (
     <div>
-      <Header />
       <Router>
+      <Header />
         <Routes>
           <Route path='/' element={<Explore />} />
           <Route path='/deals' element={<Deals />} />

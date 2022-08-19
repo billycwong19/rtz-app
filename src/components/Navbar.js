@@ -64,6 +64,7 @@ const Navbar = () => {
                     className={pathMatchRoute('/category/cd') ? 'navbarListItemNameActive' : 'navbarListItemName'}
                     >CD</p>
                 </li>
+                
             </ul>
         </nav>
     </footer>
